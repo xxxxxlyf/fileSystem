@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.124.131.71)(PORT = 1901)))(CONNECT_DATA = (SERVICE_NAME = HRDB)))
+    username: rmstest
+    password: rmstest
+
+fileRootPath: http://10.167.214.11/
+
+uploadFilePath: ../webapps/uploadFile_release/
+
+baseFilePath: /uploadFile_release/

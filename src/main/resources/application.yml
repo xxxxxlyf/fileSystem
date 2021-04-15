@@ -1,0 +1,50 @@
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+spring:
+  datasource:
+    username: HRWX_AP
+    password: HRWX_AP71!!
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+  jmx:
+    enabled: false
+
+
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    serialization:
+      indent_output: true
+    time-zone: GMT+8
+
+
+    http:
+      encoding:
+        charset: UTF-8
+        force: true
+        enabled: true
+
+  servlet:
+    multipart:
+      max-file-size: 1024MB  #单个文件最大
+      max-request-size: 5000MB  #设置总上传数据总大小
+
+
+
+  profiles:
+    active: dev #啟用配置檔文件 test:教育訓練測試環境 dev:教育訓練正式環境 rms:rms環境
+
+
+logging:
+  level:
+    com.file_system.dao: debug
+  path: ./log
+  file: ./log/open.log
+
+
+#头像文件夹路径
+avatar_upload_path: ../webapps/avatar/
+avatar_path: /avatar/
+
+server:
+  port: 8002

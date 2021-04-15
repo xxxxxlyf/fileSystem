@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.124.131.27)(PORT = 1901)))(CONNECT_DATA = (SERVICE_NAME = HRDB)))
+
+
+fileRootPath: https://fii-cnsbg.training.efoxconn.com/forward
+
+uploadFilePath: ../webapps/uploadFile_release/
+
+baseFilePath: /uploadFile_release/
